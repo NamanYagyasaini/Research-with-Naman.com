@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Updates — Naman Srivastava</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress-bar"></div>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naman Srivastava <small>Theoretical Physics</small></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research-interests.html">Research Interests</a></li>
+      <li><a href="research-projects.html">Projects</a></li>
+      <li><a href="academic-timeline.html">Timeline</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle color theme">☀</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">News &amp; Updates</div>
+    <h1>Latest activity</h1>
+    <p class="lead">Pulled live from <code>data/news.json</code>.</p>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div id="news-list" class="grid grid-2"></div>
+  </div>
+</section>
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Naman Srivastava.</p>
+    <div class="footer-social"><a href="contact.html">Contact</a></div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+  loadJSON('data/news.json').then(items => renderNews(document.getElementById('news-list'), items));
+</script>
+</body>
+</html>

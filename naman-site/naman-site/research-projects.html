@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Projects — Naman Srivastava</title>
+<meta name="description" content="Research projects: cosmological entanglement measures and dark matter phenomenology.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress-bar"></div>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naman Srivastava <small>Theoretical Physics</small></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research-interests.html">Research Interests</a></li>
+      <li><a href="research-projects.html">Projects</a></li>
+      <li><a href="academic-timeline.html">Timeline</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle color theme">☀</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Research Projects</div>
+    <h1>Projects &amp; research work</h1>
+    <p class="lead">Pulled live from <code>data/projects.json</code> — add a new project by adding one object to that file.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div id="projects-grid" class="grid grid-2"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Naman Srivastava. Built for academic use — edit freely.</p>
+    <div class="footer-social"><a href="contact.html">Contact</a></div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+  loadJSON('data/projects.json').then(items => {
+    renderProjects(document.getElementById('projects-grid'), items);
+  });
+</script>
+</body>
+</html>

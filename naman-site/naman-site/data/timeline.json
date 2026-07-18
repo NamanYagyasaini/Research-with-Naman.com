@@ -1,0 +1,33 @@
+[
+  {
+    "date": "2022",
+    "title": "B.Sc. Physics",
+    "institution": "Add your undergraduate institution",
+    "description": "Foundational coursework in classical mechanics, electrodynamics, and quantum mechanics."
+  },
+  {
+    "date": "2024 – 2026",
+    "title": "M.Sc. Physics",
+    "institution": "NIT Silchar",
+    "description": "Coursework and research in theoretical physics, culminating in a thesis on quantum entanglement in cosmological squeezed states during Starobinsky inflation."
+  },
+  {
+    "date": "Summer",
+    "title": "Research Internship — Dark Matter Phenomenology",
+    "institution": "IIT Guwahati",
+    "description": "Worked on thermal freeze-out and relic density calculations for dark matter candidates."
+  },
+  {
+    "date": "2026",
+    "title": "M.Sc. Thesis Defense",
+    "institution": "NIT Silchar",
+    "description": "\"Quantum Entanglement Measures of Cosmological Squeezed States in Starobinsky Inflation.\""
+  },
+  {
+    "date": "Ongoing",
+    "title": "Ph.D. Applications",
+    "institution": "Target: Theoretical Cosmology / Quantum Information",
+    "description": "Applying to doctoral programs and research schools in quantum information, quantum simulation of many-body systems, and cosmology.",
+    "future": true
+  }
+]

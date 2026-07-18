@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Naman Srivastava</title>
+<meta name="description" content="Get in touch with Naman Srivastava.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress-bar"></div>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naman Srivastava <small>Theoretical Physics</small></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research-interests.html">Research Interests</a></li>
+      <li><a href="research-projects.html">Projects</a></li>
+      <li><a href="academic-timeline.html">Timeline</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle color theme">☀</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h1>Get in touch</h1>
+    <p class="lead">This form is UI-only (no backend). Wire it to Formspree, Netlify Forms, or your own endpoint — see README.md.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-grid">
+    <form data-aos onsubmit="event.preventDefault(); alert('Form UI only — connect a backend (see README.md) to actually send this.');">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input id="subject" type="text">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Send message</button>
+    </form>
+
+    <div data-aos>
+      <h3 style="margin-bottom:18px;">Direct &amp; Social</h3>
+      <ul class="social-list">
+        <li><a href="mailto:your.email@example.com" onclick="navigator.clipboard && navigator.clipboard.writeText('your.email@example.com')">Email <span>your.email@example.com · click to copy</span></a></li>
+        <li><a href="tel:+910000000000">Phone <span>+91 00000 00000</span></a></li>
+        <li><a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub <span>↗</span></a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar <span>↗</span></a></li>
+        <li><a href="https://www.researchgate.net/" target="_blank" rel="noopener">ResearchGate <span>↗</span></a></li>
+        <li><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID <span>↗</span></a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram <span>↗</span></a></li>
+        <li><a href="assets/CV_Naman_Srivastava.pdf" download>Download CV <span>PDF</span></a></li>
+      </ul>
+
+      <div style="margin-top:28px; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;">
+        <iframe title="Map" width="100%" height="220" style="border:0; display:block;"
+          src="https://www.google.com/maps?q=Lucknow,India&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Naman Srivastava. Built for academic use — edit freely.</p>
+    <div class="footer-social"><a href="index.html">Home</a></div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
